@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="1750dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.example.facemaker.Face
+                android:id="@+id/face"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/Skin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skin"
+                        android:textSize="18sp"
+                        android:translationX="15sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <RadioButton
+                        android:id="@+id/Eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eye"
+                        android:textSize="18sp"
+                        android:translationX="15dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <RadioButton
+                        android:id="@+id/Hair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hair"
+                        android:textSize="18sp"
+                        android:translationX="15dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/HairStyles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HairStyles"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:translationX="135dp" />
+
+                <Spinner
+                    android:id="@+id/hairStyles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Colors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Color"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:translationX="165dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/RedColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red"
+                        android:textColor="#E91E63"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationX="10dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <SeekBar
+                        android:id="@+id/RedSetting"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:translationX="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/BlueColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        android:textColor="#3F51B5"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationX="10dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <SeekBar
+                        android:id="@+id/BlueSetting"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:translationX="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/GreenColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green"
+                        android:textColor="#4CAF50"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:translationX="10dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <SeekBar
+                        android:id="@+id/GreenSetting"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:translationX="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="Random   Face"
+                    android:textSize="18sp"
+                    android:translationX="115dp"
+                    app:backgroundTint="#673AB7" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
